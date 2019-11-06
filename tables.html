@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+            Making tables
+    </title>
+    <style>
+    h1 {
+      text-align: center;
+    }
+    table.stats {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    caption.stats {
+      font-style: italic;
+      text-align: center;
+    }
+    .bold-cell {
+      font-weight: bold;
+      text-align: center;
+    }
+    td.stats {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    table.timetable {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+    caption.timetable {
+      font-weight: bold;
+      text-align: center;
+    }
+    td.timetable {
+      border: 1px solid grey;
+      padding: 3px;
+      text-align: center;
+    }
+    table.cell {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    td.cell {
+      border: 1px solid black;
+      padding: 25px 40px;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+         Test tables
+    </h1>
+    <section>
+        <h2>
+             The first table
+        </h2>
+        <table class="stats">
+            <caption class="stats">
+                      A test table with merged cells
+            </caption>
+            <tbody>
+                <tr>
+                    <td class="stats" rowspan="2"></td>
+                    <td class="bold-cell stats" colspan="2">Average</td>
+                    <td class="bold-cell stats" rowspan="2">Red eyes</td>
+                </tr>
+                <tr>
+                    <td class="bold-cell stats">height</td>
+                    <td class="bold-cell stats">weight</td>
+                </tr>
+                <tr>
+                    <td class="bold-cell stats">Males</td>
+                    <td class="stats">1.9</td>
+                    <td class="stats">0.003</td>
+                    <td class="stats">40%</td>
+                </tr>
+                <tr>
+                    <td class="bold-cell stats">Females</td>
+                    <td class="stats">1.7</td>
+                    <td class="stats">0.002</td>
+                    <td class="stats">43%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>
+             The second table
+        </h2>
+        <table class="timetable">
+            <caption class="timetable">
+                      Time Table
+            </caption>
+            <tbody>
+                <tr>
+                    <td class="bold-cell timetable" rowspan="6">Hours</td>
+                    <td class="bold-cell timetable">Mon</td>
+                    <td class="bold-cell timetable">Tue</td>
+                    <td class="bold-cell timetable">Wed</td>
+                    <td class="bold-cell timetable">Thu</td>
+                    <td class="bold-cell timetable">Fri</td>
+                </tr>
+                <tr>
+                    <td class="timetable">Science</td>
+                    <td class="timetable">Maths</td>
+                    <td class="timetable">Science</td>
+                    <td class="timetable">Maths</td>
+                    <td class="timetable">Arts</td>
+                </tr>
+                <tr>
+                    <td class="timetable">Social</td>
+                    <td class="timetable">History</td>
+                    <td class="timetable">English</td>
+                    <td class="timetable">Social</td>
+                    <td class="timetable">Sports</td>
+                </tr>
+                <tr>
+                    <td class="bold-cell timetable" colspan="5">Lunch</td>
+                </tr>
+                <tr>
+                    <td class="timetable">Science</td>
+                    <td class="timetable">Maths</td>
+                    <td class="timetable">Science</td>
+                    <td class="timetable">Maths</td>
+                    <td class="timetable" rowspan="2">Project</td>
+                </tr>
+                <tr>
+                    <td class="timetable">Social</td>
+                    <td class="timetable">History</td>
+                    <td class="timetable">English</td>
+                    <td class="timetable">Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>
+             The third table
+        </h2>
+        <table class="cell">
+            <tbody>
+                <tr>
+                    <td class="cell" colspan="3"></td>
+                    <td class="cell"></td>
+                    <td class="cell" rowspan="3"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell" rowspan="2"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell" rowspan="2"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell" colspan="3"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell" colspan="3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
